@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication;
 
+
+
 namespace Hackaton.App.Frontend
 {
     public class Startup
@@ -26,8 +28,15 @@ namespace Hackaton.App.Frontend
         
         {
             services.AddRazorPages();
+<<<<<<< HEAD
             services.AddControllersWithViews();
+=======
+            services.AddSingleton<RepositorioMigrantes, RepositorioMigrantes>();
+
+            
+>>>>>>> 8ae61b37e56f96f3c8669ac43aad89064924d60f
         }
+
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
