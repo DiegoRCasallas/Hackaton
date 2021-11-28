@@ -7,11 +7,8 @@ namespace Hackaton.App.Persistencia.AppRepositorios
 {
     public class RepositorioMigrantes
     {
-        List<Migrantes> Migrantes;
         private readonly AppContext _appContext = new AppContext();   
 
- 
-    
         public IEnumerable<Migrantes> GetAll()
         {
             return _appContext.Migrantes;

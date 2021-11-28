@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authentication;
+using Hackaton.App.Persistencia.AppRepositorios;
 
 
 
@@ -28,13 +29,8 @@ namespace Hackaton.App.Frontend
         
         {
             services.AddRazorPages();
-<<<<<<< HEAD
-            services.AddControllersWithViews();
-=======
             services.AddSingleton<RepositorioMigrantes, RepositorioMigrantes>();
-
-            
->>>>>>> 8ae61b37e56f96f3c8669ac43aad89064924d60f
+            services.AddControllersWithViews();
         }
 
 
